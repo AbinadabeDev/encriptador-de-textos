@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100vh;
+    margin: 0;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+.flex-container {
+    padding: 40px 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    gap: 84px;
+    position: relative;
+    /* position relative para deixar os filhos mais flexíveis. */
+}
+
+.left-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container-logo {
+    width: 120px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.container-input {
+    width: 680px;
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    resize: none;
+    top: 175px;
+    left: 229px;
+    right: 531px;
+    bottom: 801px;
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    padding: 10px;
+    color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* remover a barra na lateral do textarea */
+    overflow-y: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.container-input::placeholder {
+    color: #EEEEEE;
+    opacity: 70%;
+    line-height: inherit;
+}
+
+.container-alert {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    position: absolute;
+    width: 100vh;
+    top: 851px;
+    left: 240px;
+    right: 948px;
+    bottom: 156px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #EEEEEE;
+    opacity: 80%;
+}
+
+.container-alert-item {
+    letter-spacing: 2px;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 8px;
+    position: absolute;
+    top: 885px;
+    left: 240px;
+    right: 872px;
+}
+
+.container-button-item {
+    width: 328px;
+    padding: 24px;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #EEEEEE;
+    color: #393E46;
+    cursor: pointer;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    flex-direction: 0;
+    gap: 40px;
+}
+
+.output-text {
+    width: 400px;
+    height: 944px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 1000px;
+    resize: none;
+    border-radius: 32px;
+    background-color: transparent;
+    flex-shrink: 0;
+}
+
+.container-output {
+    width: 400px;
+    height: 944px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 1000px;
+    border: none;
+    background-color: #393E46;
+    color: #EEEEEE;
+    border-radius: 32px;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    resize: none;
+    flex-shrink: 0;
+}
+
+.container-output-img {
+    width: 356px;
+    height: 334px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 243px;
+    right: 32px;
+    bottom: 397px;
+    left: 32px;
+    flex-shrink: 0;
+}
+
+.container-output-text {
+    align-self: stretch;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    top: 579px;
+    bottom: 307px;
+    gap: 16px;
+}
+
+.container-output-text2 {
+    align-self: stretch;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    top: 653px;
+    bottom: 243px;
+    gap: 16px;
+}
