@@ -9,11 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <img class="container-logo" src="assets/Logo.svg" alt="Logo Alura">
+    </header>
     
     <main class="flex-container">
         <div class="left-column">
-            <img class="container-logo" src="assets/Logo.svg" alt="Logo Alura">
             <textarea class="container-input" name="input" id="input-id" placeholder="Digite o seu texto aqui"></textarea>
             <div class="container-alert">
                 <img class="container-alert-item" src="assets/Alerta.svg" alt="Alerta">
@@ -22,7 +23,6 @@
             <div class="container-button">
                 <button class="container-button-item" id="btn-criptografar">Criptografar</button>
                 <button class="container-button-item"  id="btn-descriptografar">Descriptografar</button>
-                <!-- <button class="container-button-item" id="btn-copiar">Copiar</button> -->
             </div>
         </div>    
             
@@ -36,7 +36,9 @@
         </div>    
     </main>
 
-    <footer></footer>
+    <footer class="rodape">
+        <p>Desenvolvido por <strong class="text-ton">AbinadabeDev | 2024</strong>.</p>
+    </footer>
     <script src="script.js" defer></script>
 </body>
 </html>
