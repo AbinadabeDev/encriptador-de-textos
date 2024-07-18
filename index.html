@@ -7,40 +7,39 @@
     <title>Encrypts Everything</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <a href="https://www.alura.com.br/" target="_blank">
-            <img class="container-logo" src="assets/Logo.svg" alt="Logo Alura">
-        </a>
-    </header>
-    
-    <main class="flex-container">
-        <div class="left-column">
-            <textarea class="container-input" name="input" id="input-id" placeholder="Digite o seu texto aqui"></textarea>
-            <div class="container-alert">
-                <img class="container-alert-item" src="assets/Alerta.svg" alt="Alerta">
-                <p class="container-alert-item">Apenas letras minúsculas e sem acentos.</p>
-            </div>
-            <div class="container-button">
-                <button class="container-button-item" id="btn-criptografar">Criptografar</button>
-                <button class="container-button-item"  id="btn-descriptografar">Descriptografar</button>
-                <button class="container-button-item">Copiar</button>
-            </div>
+    <main id="main_geral">
+        <div id="data_input">
+            <nav id="logo">
+                <a href="index.html"><img src="assets/Logo.svg" alt="logo_alura"></a>
+            </nav>
+            <section id="input_text">
+                <textarea id="textarea" placeholder="Digite seu texto aqui"></textarea>
+                <p class="alert_text">Apenas letras minúsculas e sem acentos.</p>
+            </section>
+            <section id="buttons">
+                <button class="button_geral" id="btn-criptografar" type="submit">Criptografar</button>
+                <button class="button_geral"  id="btn-descriptografar" type="submit">Descriptografar</button>
+            </section>    
         </div>    
-            
-        <div class="right-column">    
-            <textarea class="output-text" rows="10" name="output" id="output-id" readonly></textarea>
-            <div class="container-output">
-                <img class="container-output-img" src="assets/Boneco novo.svg" alt="Boneco">
-                <p class="container-output-text">Nenhuma mensagem encontrada</p>
-                <p class="container-output-text2">Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div>
+
+        <div id="data_output">  
+            <section id="section_output"> 
+                <img src="assets/Boneco novo.svg" alt="Boneco">
+                <p>Nenhuma mensagem encontrada</p>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button class="button_geral">Copiar</button>
+            </section>
         </div>    
     </main>
 
     <footer class="rodape">
         <p>Desenvolvido por <strong class="text-ton">AbinadabeDev | 2024</strong>.</p>
+        <a href="https://www.linkedin.com/in/abinadabedev/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/AbinadabeDev" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/euabinadabe/" target="_blank"><i class="bi bi-instagram"></i></a>
     </footer>
     <script src="script.js" defer></script>
 </body>

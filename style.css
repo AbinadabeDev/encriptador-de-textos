@@ -1,187 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* u */
-
-@function px-to-rem($px, $base-font-size: 16px) {
-    @return ($px / $base-font-size) * 1rem;
-}
-
-body,html {
-    width: 80%;
-    max-width: 1600px;
     margin: 0;
-    background-color: #222831;
-    color: #EEEEEE;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-
-    width: 90%;
-    margin-top: 40px;
-    margin: auto;
+body {
+    background: linear-gradient(#222831), 
+    (#393E46), url(./assets/giphy.webp);
+    background-color: #222831;
+    background-size: cover;
 }
 
-.flex-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+#main_geral {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 94vh;
 }
 
-.left-column, .right-column {
-    width: 100%;
+#data_input {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
 }
 
-.container-input {
-    width: 50%;
-    height: 54px;
-    position: absolute;
-    top: 175px;
-    left: 229px;
-    font-size: 1.5rem;
-    padding: 10px;
-    color: #EEEEEE;
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    overflow: hidden;
-    /* remover a barra na lateral do textarea */
-    overflow-y: hidden;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    resize: none;
-}
-
-.container-input::placeholder {
-    color: #EEEEEE;
-    opacity: 70%;
-}
-
-.container-alert {
+#logo {
     display: flex;
-    gap: 10px;
-    align-items: flex-start;
-    position: absolute;
-    top: 851px;
-    left: 240px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.75rem;
-    color: #EEEEEE;
-    opacity: 0.8;
-    letter-spacing: 2px;
-    padding: 10px;
+    flex-direction: row;
+    margin: 1,5rem 0 0 1rem;
 }
 
-.container-button {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    position: absolute;
-    top: 885px;
-    left: 240px;
-}
-
-.container-button-item {
-    width: 328px;
-    padding: 24px;
-    align-items: center;
-    border-radius: 24px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.125rem;
-    background-color: #EEEEEE;
-    color: #393E46;
-    text-align: center;
-    cursor: pointer;
-}
-
-.container-output {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    padding: 20px;
-    margin: 40px auto;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    background-color: #393E46;
-    color: #EEEEEE;
-    border-radius: 32px;
-}
-
-.container-output-img {
-    width: 356px;
-    height: auto;
-    position: absolute;
-    top: 243px;
-    right: 32px;
-}
-
-.output-text {
-    width: 400px;
-    height: 944px;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    resize: none;
-    border-radius: 32px;
-    background-color: transparent;
-    
-}
-
-.container-output-text, .container-output-text2 {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    position: absolute;
-    top: 579px;
-    bottom: 307px;
-    left: 32px;
-    right: 32px;
-    gap: 16px;
-}
-
-.container-output-text2 {
-    font-size: 1rem;
-    font-weight: 400;
-    top: 653px;
-    bottom: 243px;
-}
-
-.rodape {
-    padding: 24px;
-    color: #222831;
-    background-color: #EEEEEE;
-    position: fixed;
-    text-align: center;
-    bottom: 100%;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-@media (max-width: 1200px) {
-    .flex-container {
-        width: 100%;
-    }
-
-    .left-column, .right-column {
-        width: 100%;
-    }
+#logo img {
+    width: 70%;
 }
