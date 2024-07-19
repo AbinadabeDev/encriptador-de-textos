@@ -14,13 +14,13 @@ body {
     background-size: cover;
 }
 
-#main_geral {
+#main-content {
     display: grid;
     grid-template-columns: 70% 30%;
     height: 94vh;
 }
 
-#data_input {
+#data-input {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -36,11 +36,11 @@ body {
     width: 70%;
 }
 
-#input_text {
+#input-textarea {
     margin-left: 2.5rem;
 }
 
-#input_text textarea {
+#input-textarea textarea {
     border: 1px solid transparent;
     outline: none;
     width: 80%;
@@ -54,11 +54,11 @@ body {
     padding: 5px;
 }
 
-#input_text textarea:focus {
+#input-textarea textarea:focus {
     border-color: #d8dfe8c2;
 }
 
-#input_text textarea::placeholder {
+#input-textarea textarea::placeholder {
     font-size: 2rem;
     color: #ffffff89;
 }
@@ -69,7 +69,7 @@ body {
     margin-left: 2.5rem;
 }
 
-.button_geral {
+.btn-general {
     border: none;
     width: 250px;
     height: 50px;
@@ -81,24 +81,22 @@ body {
     transition: .2s;
 }
 
-#btn_crip:hover {
+.btn-general:hover {
     box-shadow: 0px 0px 50px 1px #00f2ff;
 }
 
-#btn_decrip:hover {
-    box-shadow: 0px 0px 50px 1px #ff0000;
+#btn-decrypt {
+    background-color: #00f2ff;
+    color: black;
+    border: 1px solid #3fd449;
 }
 
-#btn_copy:hover {
-    box-shadow: 0px 0px 50px 1px #ffd000;
-}
-
-#data_output {
+#data-output {
     display: flex;
     align-items: center;
 }
 
-#section_output {
+#section-output {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,18 +108,18 @@ body {
     text-align: center;
 }
 
-#section_output img {
+#section-output img {
     width: 60%;
     margin: 0 auto 3rem;
 }
 
-#section_output p{
+#section-output p{
     width: 80%;
     align-self: center;
     margin-top: .5rem;
 }
 
-#tex_result {
+#text-result{
     color: white;
     width: 90%;
     height: 85%;
@@ -133,21 +131,19 @@ body {
     background-color: transparent;
 }
 
-
-
-#btn_copy {
+#btn-copy {
     margin-top: 1rem;
     align-self: center;
 }
 
-#section_output h2 {
+#section-output h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: #EEEEEE;
 }
 
-#section_output p {
+#section-output p {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -168,18 +164,59 @@ footer a {
 }
 
 @media screen and (max-width:1250px) {
-    #main_geral {
+    #main-content {
         grid-template-columns: 60% 40%;
     }
 }
 
 
-@media screen and {max-width: 1000px;
+@media screen and (max-width: 1000px){
     body {
         background-attachment: fixed;
     }
-    #main_geral {
+    #main-content {
         grid-template-columns: 1fr;
     }
-    #data_input
+    #data-input{
+        gap: 50px;
+    }
+    #input-textarea {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #input-textarea textarea {
+        width: 100%;
+        height: 30vh;
+    }
+    #buttons {
+        margin: 0 auto;
+    }
+    #section-output {
+        margin-top: 2rem;
+        height: fit-content;
+        padding: 10px;
+    }
+    #section-output {
+        display: none;
+    }
+    #btn-copy {
+        margin: 2.5rem 0 1rem;
+    }
+    footer{
+        font-size: 1.2rem;
+        margin: 2.5rem 0 0 0;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #buttons {
+        width: 80%;
+    }
+    .btn-general {
+        width: 100%;
+    }
+    #section-output {
+        margin-bottom: 1rem;
+    }
 }
