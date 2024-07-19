@@ -35,3 +35,151 @@ body {
 #logo img {
     width: 70%;
 }
+
+#input_text {
+    margin-left: 2.5rem;
+}
+
+#input_text textarea {
+    border: 1px solid transparent;
+    outline: none;
+    width: 80%;
+    height: 60vh;
+    color: white;
+    font-size: 2rem;
+    background-color: transparent;
+    resize: none;
+    caret-color: white;
+    border-radius: 14px;
+    padding: 5px;
+}
+
+#input_text textarea:focus {
+    border-color: #d8dfe8c2;
+}
+
+#input_text textarea::placeholder {
+    font-size: 2rem;
+    color: #ffffff89;
+}
+
+#buttons {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2.5rem;
+}
+
+.button_geral {
+    border: none;
+    width: 250px;
+    height: 50px;
+    color: #222831;
+    font-size: 1rem;
+    border-radius: 24px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btn_crip:hover {
+    box-shadow: 0px 0px 50px 1px #00f2ff;
+}
+
+#btn_decrip:hover {
+    box-shadow: 0px 0px 50px 1px #ff0000;
+}
+
+#btn_copy:hover {
+    box-shadow: 0px 0px 50px 1px #ffd000;
+}
+
+#data_output {
+    display: flex;
+    align-items: center;
+}
+
+#section_output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    border-radius: 24px;
+    background-color: #393E46;
+    text-align: center;
+}
+
+#section_output img {
+    width: 60%;
+    margin: 0 auto 3rem;
+}
+
+#section_output p{
+    width: 80%;
+    align-self: center;
+    margin-top: .5rem;
+}
+
+#tex_result {
+    color: white;
+    width: 90%;
+    height: 85%;
+    text-align: start;
+    font-size: 1.5rem;
+    margin: 1rem auto 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+
+#btn_copy {
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#section_output h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #EEEEEE;
+}
+
+#section_output p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #EEEEEE;
+}
+
+footer {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    color: white;
+    margin: 2rem 3.3rem 0 0;
+}
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width:1250px) {
+    #main_geral {
+        grid-template-columns: 60% 40%;
+    }
+}
+
+
+@media screen and {max-width: 1000px;
+    body {
+        background-attachment: fixed;
+    }
+    #main_geral {
+        grid-template-columns: 1fr;
+    }
+    #data_input
+}
